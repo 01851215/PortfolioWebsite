@@ -99,7 +99,7 @@ export function Hero() {
           className="text-white/40 max-w-xl mx-auto mb-12"
           style={{ fontSize: "clamp(1rem, 2vw, 1.25rem)", lineHeight: 1.7 }}
         >
-          Product Designer based in London, crafting thoughtful digital
+          Design Engineer based in London, crafting thoughtful digital
           experiences for forward-thinking companies.
         </motion.p>
 

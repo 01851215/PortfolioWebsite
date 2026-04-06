@@ -6,11 +6,9 @@ import { CaseStudies } from "./components/CaseStudies";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { MouseGlow } from "./components/MouseGlow";
-import { AuroraBackground } from "./components/AuroraBackground";
-import { FloatingParticles } from "./components/FloatingParticles";
 import { IntroScreen } from "./components/IntroScreen";
 import SplashCursor from "../components/SplashCursor";
+import Particles from "../components/Particles";
 
 export default function App() {
   const [entered, setEntered] = useState(false);
@@ -38,6 +36,20 @@ export default function App() {
           transition: "opacity 0.6s ease 0.2s",
         }}
       >
+        {/* Particles Background */}
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <Particles
+            particleColors={["#ffffff"]}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
         <div className="relative z-10">
           <Navbar />
           <Hero />
