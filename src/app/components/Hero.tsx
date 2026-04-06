@@ -132,7 +132,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-24 flex flex-col items-center gap-4"
+          className="mt-16 flex flex-col items-center gap-4"
         >
           <span
             className="text-white/20 uppercase tracking-[0.15em]"
@@ -146,8 +146,6 @@ export function Hero() {
             <span>Imperial College</span>
             <span className="w-1 h-1 rounded-full bg-white/10" />
             <span>CGCU</span>
-            <span className="hidden sm:block w-1 h-1 rounded-full bg-white/10" />
-            <span className="hidden sm:block">Huatian Tech</span>
           </div>
         </motion.div>
       </div>
